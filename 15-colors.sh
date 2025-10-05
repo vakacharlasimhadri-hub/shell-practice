@@ -22,7 +22,7 @@ VALIDATE(){ # functions receive inputs through args just like shell script args
 
 dnf list installed mysql
 # Install if it is not found
-if [$? -ne 0]; then
+if [ $? -ne 0 ]; then
     dnf install mysql -y
     VALIDATE $? "MySQL"
 else
@@ -30,7 +30,7 @@ else
 fi
 
 dnf list installed nginx
-if [$? -ne 0]; then
+if [ $? -ne 0 ]; then
     dnf install nginx -y
     VALIDATE $? "Nginx"
 else
@@ -38,7 +38,7 @@ else
 fi
 
 dnf list installed python3
-if [$? -ne 0]; then
+if [ $? -ne 0 ]; then
     dnf install python3 -y
     VALIDATE $? "python3"
 else
