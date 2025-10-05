@@ -6,4 +6,4 @@ echo "Script name: $0"
 echo "Curent directory: $PWD"
 echo "Who is running this: $USER"
 echo "Home directory of user: $HOME"
-
+echo "PID of the script: $$"
