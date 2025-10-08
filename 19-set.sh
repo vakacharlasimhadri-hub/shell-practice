@@ -6,7 +6,7 @@ set -e
 #     echo "There is an error in $LINENO, command is: $BASH_COMMAND"
 # }
 
-trap 'cho "There is an error in $LINENO, command is: $BASH_COMMAND"' ERR
+trap 'echo "There is an error in $LINENO, command is: $BASH_COMMAND"' ERR
 
 echo "Hello.."
 echo "Beforre error.."
